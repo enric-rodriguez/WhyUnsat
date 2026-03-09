@@ -1,0 +1,29 @@
+There is a list of activities to be done.
+Each activity should take place
+  within the specified range,
+  in one of the possible venues, and
+  requires a minimum number of people, who must be skilled at that activity.
+
+People can do at most one activity at a time.
+Venues can hold at most one activity at a time.
+
+
+==== Example input:
+
+numDays(2).   % There are 2 days: 1, 2
+numVenues(3). % There are 3 venues: 1, 2, 3
+
+% activity 1 needs at least 4 people and can take place from day 1 to day 2 at venues 2 or 3.
+activity(1, 4, 1, 2, [2, 3]).
+activity(2, 2, 1, 1, [1, 2]).
+activity(3, 1, 1, 1, [1]).
+activity(4, 3, 2, 2, [1, 2, 3]).
+
+% person 1 can do activities 2, 3.
+person(1, [2, 3]). 
+person(2, [1, 2, 3]).
+person(3, [1, 3]).
+person(4, [2, 3]).
+person(5, [1]).
+
+==== end input.
