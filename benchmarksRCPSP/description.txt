@@ -1,0 +1,14 @@
+We want to do the production planning for a factory that has a number of tasks.  
+Each task has to be done in a given time window, between its earliest starting time and its latest finishing time.
+Each task can only be done on certain machines, and its duration depends on which machine.
+A machine cannot handle more than one task simultaneously.
+Some tasks need to finish before a certain other task starts.
+
+
+==== Example input:
+
+numMachines(5).                  % 1 declaration: there are 5 machines
+before(80,14).                   % task 80 finishes strictly before task 14 starts
+task(1,36,73,[2-4,3-5,4-10]).    % task 1 runs in window 36-73, taking 4h on machine 4, 5h on 3, and 10h on 4.
+
+==== end input.
