@@ -35,7 +35,7 @@ WhyUnsat also requires a SAT solver and a proof trimmer. The available version i
        mpirun -np 8   WhyUnsat infile.gcnf  -exp constraintMessages.txt -percent 2  -proof CPproof.proof
     ```
 
-* To run the program on a SLURM cluster, adapt the script runWhyUnsat.slurm (queue, output filename, error filename, timelimit, etc.) and type:
+* To run the program on a SLURM cluster, upload and adapt the script ``runWhyUnsat.slurm`` (queue, output filename, error filename, timelimit, etc.), compile as usual with ``make`` and submit the job by typing:
 
     ```
        sbatch runWhyUnsat.slurm
